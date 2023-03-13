@@ -17,7 +17,7 @@
                                 <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">{{ $chirp->id }}</td>
                                 <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
                                     <div class="text-sm font-medium leading-5 text-gray-900">
-                                        {{ $users[($chirp->user_id) -1]->name }}
+                                        {{ $chirp->user->name }}
                                     </div>
                                 </td>
                                 <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">{{ $chirp->message }}</td>

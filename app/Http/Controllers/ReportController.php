@@ -15,11 +15,8 @@ class ReportController extends Controller
      */
     public function index(): View
     {
-        $users = User::all();
-        //dd($users);
         return view('chirps.report', [
-            'chirps' => Chirp::with('user')->latest()->get(),
-            'users' => $users
+            'chirps' => Chirp::with('user')->latest()->get()
         ]);
     }
 
